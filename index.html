@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerKing</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    
+</head>
+<body>
+    <div class="bg-container" id="bgContainer">
+        <header>
+            <nav class="navbar navbar-expand-lg  text-white">
+                <a class="navbar-brand" href="#">
+                    <img src="https://img.freepik.com/free-vector/vector-icon-illustration-colorful-hamburger-isolated-white-background_134830-1656.jpg?t=st=1725534251~exp=1725537851~hmac=8a499763f71d5a3ce1459b856f3b825ba2671341b4c85ed13caf62890c96936b&w=740" 
+                    class="icon" id="cardImage"/>
+                
+                </a><h4 class="mr-3">Burger King</h4>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto>
+                    <li class="nav-item active ">
+                      <a class="nav-link mr-2" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mr-2" href="#">Restaurants</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link mr-2" href="#">Your Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-2" href="#">Cart</a>
+                      </li>
+                    <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Specials
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Burger</a>
+                        <a class="dropdown-item" href="#">Pizza</a>
+                        <a class="dropdown-item" href="#">Coke</a>
+                        <a class="dropdown-item" href="#">Shawarma</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+        </header>
+        <div class="d-flex flex-row card-container">
+            <div>
+                <img src="https://www.butter-n-thyme.com/wp-content/uploads/2023/04/Banh-Mi-Burger.jpg" class="images-1 ml-5"  id="image"/>
+            </div>
+            <div class="d-flex flex-column burger-container" id="description">
+                <h1>Bánh Mì Burger (2010s)</h1>
+                <p>
+                    Finland, often associated with stereotypes about introversion and a fondness for saunas, has also earned a reputation for its unconventional burgers. One notable example involves burgers crafted from reindeer meat. While the idea might not immediately appeal to those outside of the Arctic Circle, reindeer meat has long been a dietary staple for the Sami, the indigenous people of Norway, Sweden, Finland, and Russia's Kola Peninsula.
+                </p>
+                
+                <button class="btn btn-outline-danger" id="orderNow">Order Now!! &gtcir; <span id="rupees">120 RS</span></button>
+            </div>
+        </div>
+
+        <div class="burgers-select row d-flex flex-row">
+            <div class="d-flex flex-column">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Celebration_Burger_%2849116811283%29.jpg/600px-Celebration_Burger_%2849116811283%29.jpg" class="small-cards" onclick="imageDisplay1()"/>
+                <h4>Burger</h4>
+            </div>
+                <img src="https://akns-images.eonline.com/eol_images/Entire_Site/2018619/rs_1024x1024-180719122106-1024-mcdonalds-fries.jpg?fit=inside|900:auto&output-quality=90" class="small-cards" onclick="imageDisplay2()"/>
+            <img src="https://halachaaday.files.wordpress.com/2014/12/546566_food_dessert_yummy_sweet_cheris_chocolate_plate_2500x1923_www-gdefon-ru.jpg" class="small-cards" onclick="imageDisplay3()"/>
+            <img src="https://content.api.news/v3/images/bin/9ad58568e6d310f0fce1ff04a8e24ce7" class="small-cards" onclick="imageDisplay4()"/>
+            <img src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg" class="small-cards" onclick="imageDisplay5()"/>
+            <img src="https://th.bing.com/th/id/OIP.8UeIFPMYwIErE1ShRYB9QAHaEo?rs=1&pid=ImgDetMain" class="small-cards" onclick="imageDisplay6()"/>
+        </div>
+        <!-- <div class="names d-flex flex-row text-white ">
+            
+            <h4>French freis</h4>
+            <h4>Dessert</h4>
+            <h4>Coke</h4>
+            <h4>Shawarma</h4>
+            <h4>Pizza</h4>
+        </div> -->
+        </div>
+    </div>
+</body>
+</html>
+
+<!-------- JAVASCRIPT CODE --------->
+
+<script>
+    let imageDisplay1Container1=document.getElementById("imageDisplay1");
+    let imageDisplay1Container2=document.getElementById("imageDisplay2");
+    let imageDisplay1Container3=document.getElementById("imageDisplay3");
+    let imageDisplay1Container4=document.getElementById("imageDisplay4");
+    let imageDisplay1Container5=document.getElementById("imageDisplay5");
+    let imageDisplay1Container6=document.getElementById("imageDisplay6");
+    let orderNowEl=document.getElementById('orderNow');
+    let rupeesEl=document.getElementById('rupees');
+    let descriptionContainer=document.getElementById("description");
+    let bgContainerel=document.getElementById('bgContainer');
+    let imageContainer=document.getElementById('image');
+
+function imageDisplay1(){
+    imageContainer.src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Celebration_Burger_%2849116811283%29.jpg/600px-Celebration_Burger_%2849116811283%29.jpg";
+    descriptionContainer.textContent="A hamburger, or simply a burger, is a dish consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll. The patties are often served with cheese, lettuce, tomato, onion, pickles, bacon or chilis with condiments such as ketchup, mustard,mayonnaise, often a variation of Thousand Island dressing and are frequently placed on sesame seed buns,A hamburger patty topped with cheese is called a cheeseburger";
+    descriptionContainer.style.fontSize="1.8rem";
+    orderNowEl.classList.add("btn","btn-outline-danger","mt-3");
+    descriptionContainer.appendChild(orderNowEl);
+    rupeesEl.textContent="₹ 150";
+    orderNowEl.appendChild(rupeesEl);
+
+}
+
+function imageDisplay2(){
+    imageContainer.src="https://akns-images.eonline.com/eol_images/Entire_Site/2018619/rs_1024x1024-180719122106-1024-mcdonalds-fries.jpg?fit=inside|900:auto&output-quality=90";
+    descriptionContainer.textContent="French fries are served hot, either soft or crispy, and are generally eaten as part of lunch or dinner or by themselves as a snack, and they commonly appear on the menus of diners, fast food restaurants, pubs, and bars. They are often salted and may be served with ketchup, vinegar, mayonnaise, tomato sauce, or other sauces. Fries can be topped more heavily, as in the dishes of poutine, loaded fries or chili cheese fries.";
+    descriptionContainer.style.fontSize="1.8rem";
+    orderNowEl.classList.add("btn","btn-outline-danger","mt-3");
+    descriptionContainer.appendChild(orderNowEl);
+    rupeesEl.textContent="₹ 80";
+    orderNowEl.appendChild(rupeesEl);
+}
+
+function imageDisplay3(){
+    imageContainer.src="https://halachaaday.files.wordpress.com/2014/12/546566_food_dessert_yummy_sweet_cheris_chocolate_plate_2500x1923_www-gdefon-ru.jpg";
+    descriptionContainer.textContent="Sweet desserts usually contain cane sugar, palm sugar, brown sugar, honey, or some types of syrup such as molasses, maple syrup, treacle, or corn syrup. Other common ingredients in Western-style desserts are flour or other starches, cooking fats such as butter or lard, dairy, eggs, salt, acidic ingredients such as lemon juice, and spices and other flavoring agents such as chocolate, coffee, peanut butter, fruits, and nuts. The proportions of these ingredients, along with the preparation methods, play a major part in the consistency, texture, and flavor of the end product.";
+    descriptionContainer.style.fontSize="1.8rem";
+    orderNowEl.classList.add("btn","btn-outline-danger","mt-3");
+    descriptionContainer.appendChild(orderNowEl);
+    rupeesEl.textContent="₹ 75";
+    orderNowEl.appendChild(rupeesEl);
+}
+
+function imageDisplay4(){
+    imageContainer.src="https://content.api.news/v3/images/bin/9ad58568e6d310f0fce1ff04a8e24ce7";
+    descriptionContainer.style.fontSize="1.8rem";
+    descriptionContainer.textContent="Coca-Cola is a world-renowned soft drink known for its crisp, refreshing taste. Made from a secret blend of carbonated water, sugar, caffeine, and natural flavors, it has been a favorite beverage since its introduction. With its distinctive sweet flavor and effervescence, Coca-Cola is enjoyed by millions globally, offering a classic experience that has stood the test of time. Whether sipped on its own or paired with a meal, Coca-Cola remains a symbol of refreshment and enjoyment.";
+    orderNowEl.classList.add("btn","btn-outline-danger","mt-3");
+    descriptionContainer.appendChild(orderNowEl);
+    rupeesEl.textContent="₹ 40";
+    orderNowEl.appendChild(rupeesEl);
+}
+
+
+function imageDisplay5(){
+    imageContainer.src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg";
+    descriptionContainer.textContent="Typically prepared with chicken, beef, or lamb, the meat is thinly sliced and served in a flatbread or wrap. It's often garnished with fresh vegetables like lettuce, tomatoes, onions, and cucumbers, and complemented by flavorful sauces such as garlic sauce, tahini, or hummus. Shawarma is a delicious and satisfying meal, known for its rich, savory taste and tender texture, making it a favorite street food around the world.";
+    descriptionContainer.style.fontSize="1.8rem";
+    orderNowEl.classList.add("btn","btn-outline-danger","mt-3");
+    descriptionContainer.appendChild(orderNowEl);
+    rupeesEl.textContent="₹ 90";
+    orderNowEl.appendChild(rupeesEl);
+}
+
+function imageDisplay6(){
+    imageContainer.src="https://th.bing.com/th/id/OIP.8UeIFPMYwIErE1ShRYB9QAHaEo?rs=1&pid=ImgDetMain";
+    descriptionContainer.style.fontSize="1.8rem";
+    descriptionContainer.textContent="Pizza is a beloved Italian dish that has become a global favorite, known for its delicious combination of flavors and endless variety. It typically features a thin or thick crust topped with tomato sauce, melted cheese, and a wide range of toppings such as pepperoni, vegetables, olives, and more. Baked to perfection, pizza offers a satisfying balance of crispy crust, gooey cheese, and savory toppings. Whether enjoyed in a traditional style or with creative twists.";
+    orderNowEl.classList.add("btn","btn-outline-danger","mt-3");
+    
+    descriptionContainer.appendChild(orderNowEl);
+    rupeesEl.textContent="₹ 230";
+    orderNowEl.appendChild(rupeesEl);
+}
+
+</script>

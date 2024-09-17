@@ -1,0 +1,66 @@
+
+.bg-container{
+    background-image: url("https://img.freepik.com/free-vector/dark-space-galaxy-background_1308-34372.jpg?t=st=1725553604~exp=1725557204~hmac=0b50923bf64dc6bd02fdf283bcdf48c004e8bd18f3935e16fc6d6af3fd255507&w=996");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%
+}
+nav{
+    background-image: linear-gradient(rgba(221, 154, 30, 0.863),rgb(241, 69, 38));
+}
+.icon{
+    height: 4rem;
+    width: 4rem;
+}
+a{
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem;
+
+}
+a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(36, 33, 33);
+}
+.images-1{
+    height: 45vh;
+    width:30vw;
+    border-radius: 1rem;
+    border:2px solid white;
+}
+.images-1:hover{
+    box-shadow:10px 5px 5px 5px rgb(139, 107, 19);
+    transition: 0.5s;
+}
+.card-container{
+    margin-top: 5rem;
+}
+.burger-container {
+    color: rgb(246, 247, 241);
+    padding: 1.3rem;
+    font-family: oswald;
+}
+.burger-container p{
+    font-size: 1.8rem;
+    
+}
+.small-cards{
+    height: 9rem;
+    width: 10.5rem;
+    margin-left: 5.4rem;
+    margin-top: 4rem;
+    border:4px solid white;
+    background-size: cover;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+}
+.small-cards:hover{
+    box-shadow: 8px 5px 5px 5px rgb(219, 11, 11);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.names h4{
+    margin-left: 8rem;
+    padding: 10px;
+}
